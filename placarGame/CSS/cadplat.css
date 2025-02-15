@@ -1,0 +1,113 @@
+/* Estilização do formulário de cadastro de plataforma */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Arial";
+}
+/* SEÇÃO DE CADASTRO */
+.cadastro_plataformas{
+    background-color: #fffafa;
+    margin: auto;
+    width: 500px;
+    max-height: 300px;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing:border-box;
+    border-radius:2px;
+}
+.cadastro{
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+input{
+    margin-top: 15px;
+}
+input[type=text]{
+    padding: 2.5px;
+}
+input[type=file]{
+    display: none;
+}
+label[for=foto]{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-top: 30px;
+    border-radius:2px;
+    position:relative;
+    left:14px;
+}
+input[type=submit]{
+    padding:5px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+input[type=submit]:hover{
+    background-color: #222324;
+    color: whitesmoke;
+    transition:1.5s;  
+}
+/* SEGUNDA TELA DA SEÇÃO DE CADASTROS */
+
+p{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+
+.btnBack{
+    text-decoration:none;
+    border: 1px solid black;
+    color: black;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 8px;
+}
+.btnBack:hover{
+    background-color: #222324;
+    color: whitesmoke;
+    transition:1.5s; 
+}
+
+/* SEÇÃO DE PLATAFORMAS CADASTRADAS */
+
+.plataformas_cadastradas{
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius:2px;
+    width: 1220px;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+}
+.plataformas, h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.plataformas{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 20px;
+    
+}
+.plat{
+    background-color: #929A9B78;
+    margin: 5px;
+    border-radius:8px;
+    padding: 10px;
+}
+.nomePlat{
+    margin-top:8px;
+    font-weight: bold;
+    color:#343434;
+}

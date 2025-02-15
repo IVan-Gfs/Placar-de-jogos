@@ -1,0 +1,172 @@
+/* DEMONSTRAÇÃO DE ESTILO DA INTERFACE DO PLACAR */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #232330;
+  color: white;
+}
+
+.placar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  align-itens: center;
+  font-family: "VT323", monospace;
+}
+.model-game {
+  float: left;
+  width: 600px;
+  margin: 12px;
+  height: 500px;
+  background-color: gray;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+.about-game {
+  text-align: center;
+  background-color: #e1e1e980;
+  margin: 10px;
+  border-radius: 15px;
+  height: 52px;
+}
+
+.about-game img {
+  float: left;
+  position: relative;
+  top: 5px;
+  left: 20px;
+}
+.name-game {
+  float: right;
+  position: relative;
+  right: 30px;
+  font-size: 3.2em;
+  color: black;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5em;
+  padding-left: 40px;
+  padding-right: 10px;
+  color: #efef51;
+}
+
+.line-position {
+  padding: 0px 10px 10px 10px;
+}
+
+.rank-position {
+  background-color: #ffffffba;
+  color: black;
+  float: left;
+  width: 30px;
+  margin-right: 4px;
+  margin-bottom: 0px;
+  padding: 1px 2px 2px 3px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  font-size: 1.9em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rank-player {
+  font-size: 1.8em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #32323f31;
+  border-radius: 5px;
+}
+.rank-player-bottom {
+  font-size: 1.8em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #32323f2f;
+  border-radius: 5px;
+}
+span {
+  margin: 0px 0px 0px 10px;
+  text-align: center;
+}
+
+.rank-player span img {
+  position: relative;
+  top: 2px;
+  margin-left: 15px;
+}
+
+//Modelo de ultimas jogadas
+
+ .logotipo {
+    width: 30px;
+    float: left;
+    border-radius: 50%;
+}
+
+ .lastplay {
+    color: black;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* "Mai num tá responvo!! aaaa!!" Não está pronto abrão, mas está encaminhado rsrs */
+@media (max-width: 1000px) {
+   .placar{
+    margin-bottom: 100px;
+   } 
+  .model-game {
+    width: 450px;
+    height: 350px;
+  }
+  .info {
+    font-size: 1.3em;
+    padding-left: 25px;
+    padding-right: 10px;
+    color: #efef51;
+  }
+  .name-game {
+    margin-top: 5px;
+    font-size: 2.5em;
+  }
+  .rank-player {
+    font-size: 1.2em;
+  }
+  .rank-position {
+    font-size: 1em;
+    width: 15px;
+  }
+  .line-position {
+    padding: 0px 10px 5px 10px;
+  }
+  .rank-player span img {
+    position: relative;
+    height: 15px;
+    top: 2px;
+    margin-left: 5px;
+  }
+  .logotipo{
+    float: left;
+    height: 15px;
+    width: 15px;
+  }
+  .logotipo > img {
+    height: 15px;
+    width: 15px;
+   
+    border-radius: 50%;
+  }
+  
+  .lastplay {
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 5px;
+  }
+}

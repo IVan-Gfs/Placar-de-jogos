@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+.start{
+    width: 145px;
+    height:105px;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+
+}
+.end{
+    width:145px;
+    height:105px;
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: 0px;
+    right: 2px;
+}
+
+.gif{
+    height: 80px;
+    position: fixed;
+    bottom: 0px;
+    animation: screenChanInd linear 15s infinite;
+}
+.animation{
+    position: absolute;  
+}
+
+ 
+@keyframes screenChanInd {
+    from{
+        transform: translate(5px);
+        bottom: 10px;
+    }
+    to{
+        transform: translate(95vw);
+        bottom: 10px;
+    }
+}
+
+/* Um pequeno lembrete ao esforço do nosso caro amigo! */
+
+/* @keyframes teste { 
+     0%{
+        left: 0;
+        bottom: 0;
+        transform: rotate(0deg);
+    } 
+     25%{
+        left: 95%;
+        bottom: 0;
+        transform: rotate(0deg);
+    } 
+     26%{
+        left: 95%;
+        bottom: 2%;
+        transform: rotate(-90deg);
+    }
+    50%{
+        left: 95%;
+        bottom: 91%;
+        transform: rotate(-90deg);
+    } 
+     51%{
+        left: 95%;
+        bottom: 91%;
+        transform: rotate(-180deg);
+    }
+    75%{
+        left: 0;
+        bottom: 91%;
+        transform: rotate(-180deg);
+    }
+    76%{
+        left: 0;
+        bottom: 91%;
+        transform: rotate(-270deg);
+    } 
+     99%{
+        left: 0;
+        bottom: 2%;
+        transform: rotate(-270deg);
+    }
+    100%{
+        left: 0;
+        bottom: 0;
+        transform: rotate(-360deg);
+    } 
+ }  */ 
+
+
+ @media(max-width: 1000px){
+    body, html{
+        overflow: scroll;
+    }
+    .start{
+        width: 16%;
+        height: 12%;
+        position: fixed;
+    }
+    .end{
+        width: 16%;
+        height: 12%;
+        position: fixed;
+        right:0px;
+    }
+    .gif{
+        height:8%;
+    }
+    footer{
+        height: 10%;
+        position: fixed;
+        background-color:#952295;
+    }
+}
+

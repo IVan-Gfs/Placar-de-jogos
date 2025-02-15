@@ -1,0 +1,77 @@
+/* Estilização do Formulário de Visitante */
+
+.main {
+  margin: auto;
+  width: 500px;
+  max-height: 1000px;
+  background-color: #898995;
+  padding: 15px;
+  border-radius: 2px;
+}
+h1 {
+  font-family: "Arial";
+  text-align: center;
+}
+input {
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+input[type="date"],
+input[name="nick"] {
+  width: 150px;
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+label.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 40px;
+  margin: 5px;
+  background-color: #ffffff92;
+  border: 1px solid dodgerblue;
+  padding: 5px;
+  float: left;
+  color: dodgerblue;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+label.check:hover {
+  cursor: pointer;
+}
+
+input:checked+label {
+  transition: all 0.5s ease-in-out;
+  border: solid 1px dodgerblue;
+  color: white;
+  background-color: dodgerblue;
+}
+
+form {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+input[type="submit"] {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: bold;
+  margin-top: 10px;
+  width: 150px;
+}
